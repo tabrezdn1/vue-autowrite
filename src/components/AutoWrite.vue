@@ -1,8 +1,6 @@
 <template>
-  <div class="auto-write">
-    <h1>{{ displayText }}</h1>
-  </div>
-</template>
+  <div class="auto-write" v-html="getDisplayText" />
+</template>	
 
 <script>
 export default {
@@ -16,14 +14,24 @@ export default {
       type: Number,
       default: 100,
     },
+    tag: {
+      type: String,
+      default: "h1",
+    },
   },
   data() {
     return {
-      autoWriteText: "",
-      displayText: "",
+      autoWriteText: null,
+      displayText: null,
       index: 0,
       delayTime: 0,
+      tagName: null,
     };
+  },
+  computed: {
+    getDisplayText() {
+      return `<${this.tagName}> ${this.displayText} </${this.tagName}>`;
+    },
   },
   mounted() {
     // update data property from props
@@ -36,12 +44,13 @@ export default {
     initData() {
       this.autoWriteText = this.text;
       this.delayTime = this.delay;
+      this.tagName = this.tag;
     },
     initWriting() {
       this.displayText = this.autoWriteText.slice(0, this.index);
 
       if (this.index > this.autoWriteText.length) {
-				this.index = 0;
+        this.index = 0;
       }
       this.index++;
     },
