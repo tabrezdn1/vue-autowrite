@@ -4,8 +4,9 @@
     "name": "Saik Tabrez",
     "email": "tabrezdn1@gmail.com"
   },
-  "version": "0.1.0",
-  "private": false,
+  "version": "0.1.1",
+	"private": false,
+	"license": "MIT",
   "main": "./dist/autoWrite.common.js",
   "unpkg": "./dist/autoWrite.umd.min.js",
   "scripts": {
