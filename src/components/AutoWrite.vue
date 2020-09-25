@@ -1,5 +1,8 @@
 <template>
-  <div :class=" hasCustomClass ? getCssClassName : 'default-auto-write' " v-html="getDisplayText" />
+  <div
+    :class="hasCustomClass ? getCssClassName : 'default-auto-write'"
+    v-html="getDisplayText"
+  />
 </template>	
 
 <script>
@@ -17,10 +20,10 @@ export default {
     tag: {
       type: String,
       default: "h1",
-		},
-		cssClass:{
-			type: String,
-		}
+    },
+    cssClass: {
+      type: String,
+    },
   },
   data() {
     return {
@@ -28,17 +31,17 @@ export default {
       displayText: null,
       index: 0,
       delayTime: 0,
-			tagName: null,
-			hasCustomClass: false
+      tagName: null,
+      hasCustomClass: false,
     };
   },
   computed: {
     getDisplayText() {
       return `<${this.tagName}> ${this.displayText} </${this.tagName}>`;
-		},
-		getCssClassName(){
-			return this.cssClass;
-		}
+    },
+    getCssClassName() {
+      return this.cssClass;
+    },
   },
   mounted() {
     // update data property from props
@@ -51,12 +54,12 @@ export default {
     initData() {
       this.autoWriteText = this.text;
       this.delayTime = this.delay;
-			this.tagName = this.tag;
-			
-			// Check if cssClass prop exists
-			if(this.cssClass){
-				this.hasCustomClass = true;
-			}
+      this.tagName = this.tag;
+
+      // Check if cssClass prop exists
+      if (this.cssClass) {
+        this.hasCustomClass = true;
+      }
     },
     initWriting() {
       this.displayText = this.autoWriteText.slice(0, this.index);

@@ -1,5 +1,5 @@
 <template>
-  <Autowrite text="Welcome to Your Vue.js App" :delay="100"/>
+  <Autowrite text="Welcome to Your Vue.js App" :delay="100" />
 </template>
 <script>
 import Autowrite from "./components/AutoWrite";
