@@ -1,24 +1,8 @@
 # vue-autowrite
 
-## Project setup
+## Purpose
 ```
-yarn install
+This is a vue component which displays text in typing/writing style. In order to acheive styles like autotyping ... 
 ```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Pending
+Document updating ...
