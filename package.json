@@ -1,12 +1,12 @@
 {
-	"name": "vue-autowrite",
-	"author": {
+  "name": "vue-autowrite",
+  "author": {
     "name": "Saik Tabrez",
     "email": "tabrezdn1@gmail.com"
   },
   "version": "0.1.1",
-	"private": false,
-	"license": "MIT",
+  "private": false,
+  "license": "MIT",
   "main": "./dist/autoWrite.common.js",
   "unpkg": "./dist/autoWrite.umd.min.js",
   "scripts": {
@@ -14,19 +14,19 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "build-package": "vue-cli-service build --target lib --name autoWrite ./src/components/AutoWrite.vue"
-	},
-	"keywords": [
-		"vue",
-		"vue-js",
-		"auto",
-		"write",
-		"autowrite",
-		"vue-autowrite",
-		"writing",
-		"typing"
-	],
-	"description": "A package made for fun to work with strings, to display string in typing animation",
-	"repository": "github:tabrezdn1/vue-autowrite",
+  },
+  "keywords": [
+    "vue",
+    "vue-js",
+    "auto",
+    "write",
+    "autowrite",
+    "vue-autowrite",
+    "writing",
+    "typing"
+  ],
+  "description": "A package made for fun to work with strings, to display string in typing animation",
+  "repository": "github:tabrezdn1/vue-autowrite",
   "files": [
     "dist/*"
   ],
