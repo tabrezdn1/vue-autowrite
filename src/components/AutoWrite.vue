@@ -28,7 +28,7 @@ export default {
   data() {
     return {
       autoWriteText: null,
-      displayText: null,
+      displayText: "",
       index: 0,
       delayTime: 0,
       tagName: null,
